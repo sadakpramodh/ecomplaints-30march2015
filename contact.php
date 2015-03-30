@@ -87,6 +87,12 @@ if(isset($_SESSION["username"]))
 	}
 
 
+
+echo header_page();
+echo navigation($block, $aadhar, $username, $deptid, $status, $verificationkey);
+echo sidebar($block, $aadhar, $username, $deptid, $status, $verificationkey);
+
+
 if(isset($_POST["contact"]))
 	{
 		$name = $_POST["name"];
@@ -171,9 +177,8 @@ if(isset($_POST["contact"]))
 		
 	}
 
-echo header_page();
-echo navigation($block, $aadhar, $username, $deptid, $status, $verificationkey);
-echo sidebar($block, $aadhar, $username, $deptid, $status, $verificationkey);
+
+
 ?>
 
 

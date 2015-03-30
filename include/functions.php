@@ -134,6 +134,8 @@ function sidebar($block,$aadhar,$username,$deptid,$status,$verificationkey)
 	$output .=   "</ul>";
 	
 	$output .=   "</div>";
+	$output .=   "</div>";
+	$output .=   "</div>";
 	  
 	return $output;
 		
